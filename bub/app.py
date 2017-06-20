@@ -3,23 +3,6 @@ from flask import Flask
 
 from flask_restful import Api, Resource, reqparse
 
-
-class MyLogger(object):
-    def debug(self, msg):
-        print(msg)
-
-    def warning(self, msg):
-        print(msg)
-
-    def error(self, msg):
-        print(msg)
-
-
-def my_hook(d):
-    if d['status'] == 'finished':
-        print('Done downloading, now converting ...')
-
-
 def download_song(url):
     ydl_opts = {
         'format': 'bestaudio/best',

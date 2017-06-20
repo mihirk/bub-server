@@ -1,8 +1,10 @@
 {
-  "name": "Start on Heroku: Python",
-  "description": "A barebones Python app, which can easily be deployed to Heroku.",
+  "name": "Bub Server",
+  "description": "Add youtube songs to the cloud service you use with a click of a button.",
   "image": "heroku/python",
-  "repository": "https://github.com/heroku/python-getting-started",
-  "keywords": ["python", "django" ],
-  "addons": [ "heroku-postgresql" ]
+  "repository": "https://github.com/mihirk/bub-server",
+  "keywords": [
+    "python",
+    "flask"
+  ]
 }

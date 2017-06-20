@@ -20,19 +20,9 @@ def my_hook(d):
         print('Done downloading, now converting ...')
 
 
-def upload_song(song_file_name):
-    print(song_file_name)
-
-
-def progress_hook(progress):
-    if progress['status'] == 'finished':
-        upload_song(progress['filename'])
-
-
 def download_song(url):
     ydl_opts = {
         'format': 'bestaudio/best',
-        'progress_hooks': progress_hook,
         'postprocessors': [{
             'key': 'FFmpegExtractAudio',
             'preferredcodec': 'mp3',

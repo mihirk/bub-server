@@ -1,2 +1,4 @@
 gunicorn==19.6.0
-Flask
+Flask==0.12.2
+flask-restful
+youtube_dl
